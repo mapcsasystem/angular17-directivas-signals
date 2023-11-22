@@ -15,6 +15,7 @@ interface MenuItem {
   styleUrl: './side-menu.component.scss',
 })
 export class SideMenuComponent {
+  // con signals
   public menuItems = signal<MenuItem[]>([
     {
       title: 'Contador',
@@ -30,6 +31,7 @@ export class SideMenuComponent {
     },
   ]);
 
+  // sin signals
   // public menuItems: MenuItem[] = [
   //   {
   //     title: 'Contador',
