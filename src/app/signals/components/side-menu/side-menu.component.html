@@ -1,0 +1,10 @@
+<ul class="list-group">
+
+    @for (menu of menuItems; track menu.title;let i=$index) {
+    <li class="list-group-item" [routerLink]="[menu.route]" routerLinkActive="active">
+        {{(i+1)+' '+ menu.title }}
+    </li>
+    }
+
+
+</ul>
