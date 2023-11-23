@@ -1,1 +1,10 @@
-<p>counter-page works!</p>
+<h3>Contador: {{ counter() }}</h3>
+<hr>
+<h2>Contador al cuadrado {{ squareCouter() }} </h2>
+<hr>
+
+<button class="btn btn-danger m-2" (click)="increaseBy(-1)">-1</button>
+
+<button class="btn btn-outline-primary m-2" (click)="resetCounter()">Reset</button>
+
+<button class="btn btn-primary m-2" (click)="increaseBy(+1)">+1</button>
