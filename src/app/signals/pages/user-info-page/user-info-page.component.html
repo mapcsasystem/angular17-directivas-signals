@@ -1,1 +1,26 @@
-<p>user-info-page works!</p>
+<h1>Información del usuario</h1>
+<hr>
+
+<div class="row">
+  <div class="col-4">
+    <h3>Usuario actual: {{ userId() }}</h3>
+    <button (click)="loadUser(userId()-1)" class="btn btn-primary m-2">Anterior</button>
+    <button (click)="loadUser(userId()+1)" class="btn btn-primary m-2">Siguiente</button>
+  </div>
+
+  @if (userWasFound()) {
+  <div class="col-8">
+    <h3>Usuario:</h3>
+    <p>Correo: {{currentUser()?.email }}</p>
+    <p>Nombre: {{ currentUser()?.first_name}} {{currentUser()?.last_name}}</p>
+    <img [src]="currentUser()?.avatar" alt="Avatar">
+  </div>
+  }@else {
+  <div class="col-8 text-danger">
+    <h3>Usuario no encontrado</h3>
+  </div>
+  }
+
+
+
+</div>
