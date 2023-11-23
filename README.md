@@ -18,3 +18,17 @@ http://localhost:4200/products
 2. npm v10.2.4
 3. Angular v17.0.2
 4. Boostrap v5.3.2
+
+## Nota el api de usuarios es
+
+```
+https://reqres.in/api/users
+```
+
+#### Nota el api de usuarios es
+
+```
+https://reqres.in/api/users
+```
+
+[Página Web de Api](https://reqres.in)

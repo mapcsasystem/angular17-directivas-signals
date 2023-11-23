@@ -1,21 +1,21 @@
 <ul class="list-group">
 
 
-    <!-- Sin signals -->
+  <!-- Sin signals -->
 
-    <!-- @for (menu of menuItems; track menu.title;let i=$index) {
+  <!-- @for (menu of menuItems; track menu.title;let i=$index) {
     <li class="list-group-item" [routerLink]="[menu.route]" routerLinkActive="active">
         {{(i+1)+' '+ menu.title }}
     </li>
     } -->
 
-    <!-- Con signals -->
+  <!-- Con signals -->
 
-    @for (menu of menuItems(); track menu.title;let i=$index) {
-    <li class="list-group-item" [routerLink]="[menu.route]" routerLinkActive="active">
-        {{(i+1)+' '+ menu.title }}
-    </li>
-    }
+  @for (menu of menuItems(); track menu.title;let i=$index) {
+  <li class="list-group-item" [routerLink]="[menu.route]" routerLinkActive="active">
+    {{(i+1)+'. '+ menu.title }}
+  </li>
+  }
 
 
 </ul>
