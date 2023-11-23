@@ -25,10 +25,4 @@ http://localhost:4200/products
 https://reqres.in/api/users
 ```
 
-#### Nota el api de usuarios es
-
-```
-https://reqres.in/api/users
-```
-
 [Página Web de Api](https://reqres.in)
